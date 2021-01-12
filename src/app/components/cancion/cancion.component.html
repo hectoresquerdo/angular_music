@@ -1,5 +1,20 @@
-<h1>{{cancion.titulo}}</h1>
-<div><span>{{cancion.autor}}</span></div>
-<div><span>{{cancion.year}}</span></div>
-<div><span>{{cancion.disc}}</span></div>
-<div><span>{{cancion.style}}</span></div>
+<h1>Listado de Canciones</h1>
+<ul class="canciones">
+  <li *ngFor="let cancion of canciones">
+    <button class="btn">
+      <div>
+        <img src="../../../assets/img/mala.jpg" width="50px" height="50px">
+      </div>
+      <div>
+        <span class="ejercicio">{{cancion.titulo}}</span>
+      </div>
+      <div>
+        <div><span class="detalleCancion">{{cancion.autor}}</span></div>
+        <div><span class="detalleCancion">{{cancion.year}}</span></div>
+        <div><span class="detalleCancion">{{cancion.disc}}</span></div>
+        <div><span class="detalleCancion">{{cancion.style}}</span></div>
+      </div>
+
+    </button>
+  </li>
+</ul>

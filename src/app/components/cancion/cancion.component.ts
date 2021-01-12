@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Cancion } from '../../cancion';
+import { Canciones } from '../../coleccion';
+
 
 @Component({
   selector: 'app-cancion',
@@ -8,14 +10,7 @@ import { Cancion } from '../../cancion';
 })
 export class CancionComponent implements OnInit {
 
-  cancion: Cancion = {
-    titulo: "Maximo exponente",
-    autor: "Violadores del Verso",
-    year: 1999,
-    disc: "Genios",
-    style: "hip-hop"
-  }
-
+  canciones = Canciones;
 
   constructor() { }
 
