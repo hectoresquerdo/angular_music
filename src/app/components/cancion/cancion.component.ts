@@ -11,10 +11,16 @@ import { Canciones } from '../../coleccion';
 export class CancionComponent implements OnInit {
 
   canciones = Canciones;
+  cancionSeleccionada: Cancion;
 
   constructor() { }
 
   ngOnInit(): void {
+
+  }
+  onSelectCancion(cancion: Cancion): void {
+    console.log("Hemos seleccionado: " + cancion.autor);
+    this.cancionSeleccionada = cancion;
   }
 
 }

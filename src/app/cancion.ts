@@ -3,5 +3,7 @@ export interface Cancion {
   autor: String,
   year: Number,
   disc: String,
-  style: String
+  style: String,
+  imagen: String,
+
 }
