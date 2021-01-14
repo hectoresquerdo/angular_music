@@ -5,11 +5,13 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CancionComponent } from './components/cancion/cancion.component';
+import { CancionDetalleComponent } from './components/cancion-detalle/cancion-detalle.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CancionComponent
+    CancionComponent,
+    CancionDetalleComponent
   ],
   imports: [
     BrowserModule,

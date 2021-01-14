@@ -5,5 +5,6 @@ export interface Cancion {
   disc: String,
   style: String,
   imagen: String,
+  url: String,
 
 }

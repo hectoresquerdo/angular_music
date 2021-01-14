@@ -3,7 +3,7 @@
   <div class="songlist">
     <ul class="canciones">
       <li *ngFor="let cancion of canciones">
-        <button class="btn" (click)="onSelectCancion(cancion)">
+        <a class="btn" (click)="onSelectCancion(cancion)" [class.selected]="cancion===cancionSeleccionada">
           <div>
             <img src={{cancion.imagen}} width="75px" height="75px">
           </div>
@@ -16,54 +16,11 @@
             <div><span class="detalleCancion">{{cancion.style}}</span></div>
           </div>
 
-        </button>
+        </a>
       </li>
     </ul>
   </div>
 
-  <div *ngIf="cancionSeleccionada" class="selectedsong">
-
-    <div>
-      <div>
-        <img src={{cancionSeleccionada.imagen}}>
-      </div>
-    </div>
-    <div>
-      <div class="titlesong">
-        <span>{{cancionSeleccionada.titulo}}</span>
-        <span> - </span>
-        <span>{{cancionSeleccionada.autor}}</span>
-      </div>
-    </div>
-    <div class="infoselected">
-      <div class="itemsong">
-        <span class="topsong">Year</span>
-        <div>
-          <span class="bottomsong">{{cancionSeleccionada.year}}</span>
-        </div>
-      </div>
-      <div class="itemsong">
-        <span class="topsong">Style</span>
-        <div>
-          <span class="bottomsong">{{cancionSeleccionada.style}}</span>
-        </div>
-      </div>
-      <div class="itemsong">
-        <span class="topsong">Autor</span>
-        <div>
-          <span class="bottomsong">{{cancionSeleccionada.autor}}</span>
-        </div>
-      </div>
-      <div class="itemsong">
-        <span class="topsong">Album</span>
-        <div>
-          <span class="bottomsong">{{cancionSeleccionada.disc}}</span>
-        </div>
-      </div>
-
-    </div>
-
-
-  </div>
+  <app-cancion-detalle [cancion]="cancionSeleccionada"></app-cancion-detalle>
 
 </div>

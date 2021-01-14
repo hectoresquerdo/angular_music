@@ -1,0 +1,40 @@
+<div *ngIf="cancion" class="selectedsong">
+  <div>
+    <div>
+      <img src={{cancion.imagen}}>
+    </div>
+  </div>
+  <div>
+    <div class="titlesong">
+      <span>{{cancion.titulo}}</span>
+      <span> - </span>
+      <span>{{cancion.autor}}</span>
+    </div>
+  </div>
+  <div class="infoselected">
+    <div class="itemsong">
+      <span class="topsong">Year</span>
+      <div>
+        <span class="bottomsong">{{cancion.year}}</span>
+      </div>
+    </div>
+    <div class="itemsong">
+      <span class="topsong">Style</span>
+      <div>
+        <span class="bottomsong">{{cancion.style}}</span>
+      </div>
+    </div>
+    <div class="itemsong">
+      <span class="topsong">Autor</span>
+      <div>
+        <span class="bottomsong">{{cancion.autor}}</span>
+      </div>
+    </div>
+    <div class="itemsong">
+      <span class="topsong">Album</span>
+      <div>
+        <span class="bottomsong">{{cancion.disc}}</span>
+      </div>
+    </div>
+
+  </div>
