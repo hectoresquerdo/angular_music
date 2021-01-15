@@ -3,6 +3,7 @@ import { Cancion } from '../../cancion';
 import { Canciones } from '../../coleccion';
 
 
+
 @Component({
   selector: 'app-cancion',
   templateUrl: './cancion.component.html',
@@ -11,7 +12,8 @@ import { Canciones } from '../../coleccion';
 export class CancionComponent implements OnInit {
 
   canciones = Canciones;
-  cancionSeleccionada: Cancion;
+  cancionSeleccionada!: Cancion;
+  busqueda = '';
 
   constructor() { }
 
@@ -19,7 +21,7 @@ export class CancionComponent implements OnInit {
 
   }
   onSelectCancion(cancion: Cancion): void {
-    console.log("Hemos seleccionado: " + cancion.autor);
+    console.log(Canciones);
     this.cancionSeleccionada = cancion;
   }
 

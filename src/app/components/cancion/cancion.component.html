@@ -1,8 +1,11 @@
 <h1>Listado de Canciones</h1>
 <div class="container">
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Search Here" [(ngModel)]="busqueda">
+  </div>
   <div class="songlist">
     <ul class="canciones">
-      <li *ngFor="let cancion of canciones">
+      <li class="list-group-item" *ngFor="let cancion of canciones | filtroCancion:{titulo:busqueda}">
         <a class="btn" (click)="onSelectCancion(cancion)" [class.selected]="cancion===cancionSeleccionada">
           <div>
             <img src={{cancion.imagen}} width="75px" height="75px">
@@ -15,12 +18,10 @@
             <div><span class="detalleCancion">{{cancion.disc}}</span></div>
             <div><span class="detalleCancion">{{cancion.style}}</span></div>
           </div>
-
         </a>
       </li>
     </ul>
   </div>
 
   <app-cancion-detalle [cancion]="cancionSeleccionada"></app-cancion-detalle>
-
 </div>

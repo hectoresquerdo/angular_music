@@ -9,7 +9,9 @@ import { Cancion } from 'src/app/cancion';
 })
 export class CancionDetalleComponent implements OnInit {
 
-  @Input() cancion: Cancion;
+
+  @Input()
+  cancion!: Cancion;
   constructor() { }
 
   ngOnInit(): void {
