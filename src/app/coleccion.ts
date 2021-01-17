@@ -1,9 +1,9 @@
 import { Cancion } from './cancion';
 
 export const Canciones: Cancion[] = [
-  { titulo: "Maximo exponente", autor: "Violadores del Verso", year: 1999, disc: "Genios", style: "hip-hop", imagen: 'assets/img/violadores.jpg', url: 'assets/music/chillhop.mp3' },
-  { titulo: "La niña", autor: "Mala Rodriguez", year: 2003, disc: "Alevosía", style: "hip-hop", imagen: 'assets/img/mala.jpg', url: 'assets/music/chill.mp3' },
-  { titulo: "Tiempo", autor: "Bocafloja", year: 2005, disc: "Tiempo", style: "hip-hop", imagen: 'assets/img/bocafloja.jpg', url: 'assets/music/chillhop.mp3' },
-  { titulo: "Sangre", autor: "Shotta", year: 2008, disc: "Sangre", style: "hip-hop", imagen: 'assets/img/shotta.jpg', url: 'assets/music/chill.mp3' },
+  { titulo: "Chill music", autor: "Daloka", year: 2020, disc: "Chill summer blog", style: "chill", imagen: 'assets/img/chill1.jpg', url: 'assets/music/chillhop.mp3' },
+  { titulo: "Way home", autor: "Walker JP", year: 2020, disc: "Free chill", style: "chill", imagen: 'assets/img/chill2.jpg', url: 'assets/music/chill.mp3' },
+  { titulo: "Jazz Comedy", autor: "Bendsound", year: 2016, disc: "Blues Music", style: "jazz", imagen: 'assets/img/jazz1.jpg', url: 'assets/music/jazz1.mp3' },
+  { titulo: "Jumbo", autor: "Alex Skrindo", year: 2015, disc: "NCS Release", style: "techno", imagen: 'assets/img/techno.jpg', url: 'assets/music/techno.mp3' },
 ];
 

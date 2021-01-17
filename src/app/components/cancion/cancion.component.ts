@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Cancion } from '../../cancion';
 import { Canciones } from '../../coleccion';
-import { ReproductorComponent } from '../reproductor/reproductor.component';
+import { MatListModule } from '@angular/material/list';
 
 
 

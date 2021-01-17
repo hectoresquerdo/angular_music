@@ -13,7 +13,7 @@ import { ReproductorComponent } from './components/reproductor/reproductor.compo
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { NgxAudioPlayerModule } from 'ngx-audio-player';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -22,6 +22,7 @@ import { NgxAudioPlayerModule } from 'ngx-audio-player';
     CancionDetalleComponent,
     FiltroPipe,
     ReproductorComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -29,7 +30,9 @@ import { NgxAudioPlayerModule } from 'ngx-audio-player';
     FormsModule,
     Ng2SearchPipeModule,
     BrowserAnimationsModule,
-    NgxAudioPlayerModule
+    MatListModule
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]
