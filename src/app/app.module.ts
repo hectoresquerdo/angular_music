@@ -14,6 +14,8 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatListModule } from '@angular/material/list';
+import { MatButtonModule } from '@angular/material/button';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -30,8 +32,9 @@ import { MatListModule } from '@angular/material/list';
     FormsModule,
     Ng2SearchPipeModule,
     BrowserAnimationsModule,
-    MatListModule
-
+    MatListModule,
+    MatButtonModule,
+    MatInputModule
 
   ],
   providers: [],
