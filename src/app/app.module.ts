@@ -8,8 +8,12 @@ import { AppComponent } from './app.component';
 import { CancionComponent } from './components/cancion/cancion.component';
 import { CancionDetalleComponent } from './components/cancion-detalle/cancion-detalle.component';
 import { FiltroPipe } from './pipes/filtro.pipe';
+import { ReproductorComponent } from './components/reproductor/reproductor.component';
 
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { NgxAudioPlayerModule } from 'ngx-audio-player';
 
 @NgModule({
   declarations: [
@@ -17,12 +21,15 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
     CancionComponent,
     CancionDetalleComponent,
     FiltroPipe,
+    ReproductorComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     Ng2SearchPipeModule,
+    BrowserAnimationsModule,
+    NgxAudioPlayerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

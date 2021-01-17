@@ -1,0 +1,25 @@
+<div>
+
+  <div *ngIf="cancion">
+    <span>{{cancion.titulo}}</span>
+    <span> - </span>
+    <span>{{cancion.autor}}</span>
+
+  </div>
+
+  <div>
+    <button (click)="play()" (click)="openFile(cancion.url)">Play</button>
+    <button (click)="pause()">Pause</button>
+    <button (click)="stop()">Stop</button>
+  </div>
+  <div>
+    <span>{{currentTime}}</span>
+    <input type="range" min="0" max="{{currentTime}}" [value]="seek" (input)="setSeekTo($event)">
+    <span>{{duration}}</span>
+  </div>
+  <div>
+    <label>Volume</label>
+    <input type="range" min="0" max="1" step="0.01" value="0.5" (input)="setVolume($event)">
+  </div>
+
+</div>

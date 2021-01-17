@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Cancion } from '../../cancion';
 import { Canciones } from '../../coleccion';
+import { ReproductorComponent } from '../reproductor/reproductor.component';
 
 
 
@@ -15,13 +16,14 @@ export class CancionComponent implements OnInit {
   cancionSeleccionada!: Cancion;
   busqueda = '';
 
+
   constructor() { }
 
   ngOnInit(): void {
 
   }
   onSelectCancion(cancion: Cancion): void {
-    console.log(Canciones);
+
     this.cancionSeleccionada = cancion;
   }
 
