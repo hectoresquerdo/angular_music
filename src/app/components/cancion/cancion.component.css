@@ -7,7 +7,7 @@
   color: white;
   font-size: 22px;
   font-style: italic;
-  margin: 10px;
+  margin: 15px;
 }
 .input-buscador{
   width: 300px;
@@ -28,7 +28,7 @@
 .songlist{
   display: flex;
   align-items: center;
-  width: 27rem;
+  width: 29rem;
   height: 26rem;
   padding: 5px;
   border: none;
@@ -52,9 +52,9 @@ ul{
   justify-content: space-around;
   align-items: center;
   border-radius: 50px;
-  padding-left: 10px;
-  margin: 5px;
+  margin: 10px;
   background-color: grey;
+  padding-left: 20px;
 }
 .song{
   width: 25px;
@@ -64,9 +64,10 @@ ul{
   height: 3rem;
   align-items: center;
   padding-top: 25px;
-  margin-left: 10px;
+  padding-left: 20px;
+  margin-left:20px;
   font-family: monospace;
-  font-size: 20px;
+  font-size: 19px;
   color: white;
   font-style: bold;
 
@@ -74,13 +75,30 @@ ul{
 .song-info{
   display: flex;
   flex-direction: column;
-  width: 90px;
+  width: 130px;
   justify-content: space-evenly;
   font-family: monospace;
-  font-size: 12px;
+  font-size: 14px;
   font-style: italic;
   color: white;
 }
 img{
   border-radius: 10px;
+}
+.cancion-seleccionada{
+  display: flex;
+  align-items: center;
+  width: 27rem;
+  height: 26rem;
+  padding: 5px;
+  border: none;
+  background-color:#2f3b2d;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+.reproductor{
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: grey;
 }
