@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Cancion } from '../../cancion';
-import { Canciones } from '../../coleccion';
-import { MatListModule } from '@angular/material/list';
-
+import { SongListService } from '../../service/song-list.service';
 
 
 @Component({
@@ -12,15 +10,19 @@ import { MatListModule } from '@angular/material/list';
 })
 export class CancionComponent implements OnInit {
 
-  canciones = Canciones;
+  canciones: Cancion[];
   cancionSeleccionada!: Cancion;
   busqueda = '';
 
 
-  constructor() { }
+  constructor(private songService: SongListService) { }
+
+  getCanciones(): void {
+    this.songService.getCanciones().subscribe(canciones => this.canciones = canciones);
+  }
 
   ngOnInit(): void {
-
+    this.getCanciones();
   }
   onSelectCancion(cancion: Cancion): void {
 

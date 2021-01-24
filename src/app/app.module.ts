@@ -17,6 +17,12 @@ import { MatListModule } from '@angular/material/list';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireAnalyticsModule } from '@angular/fire/analytics';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { environment } from '../environments/environment';
+import { TestDBComponent } from './test-db/test-db.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,6 +30,7 @@ import { MatInputModule } from '@angular/material/input';
     CancionDetalleComponent,
     FiltroPipe,
     ReproductorComponent,
+    TestDBComponent,
 
   ],
   imports: [
@@ -34,7 +41,10 @@ import { MatInputModule } from '@angular/material/input';
     BrowserAnimationsModule,
     MatListModule,
     MatButtonModule,
-    MatInputModule
+    MatInputModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireAnalyticsModule,
+    AngularFirestoreModule
 
   ],
   providers: [],

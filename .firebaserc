@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "angular-music-e93fb": {
+      "hosting": {
+        "musicapp": [
+          "angular-music-e93fb"
+        ]
+      }
+    }
+  }
+}
